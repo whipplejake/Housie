@@ -245,9 +245,9 @@ public class HousieDriver {
                   + ")");
         }
         // preventing an overflow situation
-        else if((numbersPerRow * columns) < 0){
-          System.out.println(
-              "Please enter an integer greater than 0 and less than " + (Integer.MAX_VALUE / columns) + ".");
+        else if ((numbersPerRow * columns) < 0) {
+          System.out
+              .println("Please enter an integer greater than 0 and less than " + (Integer.MAX_VALUE / columns) + ".");
         }
       } catch (NumberFormatException e) {
         System.out.println("ERROR: Please enter a valid integer");

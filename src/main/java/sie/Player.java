@@ -17,7 +17,7 @@ public class Player {
   /**
    * Constructor that instantiates a player with a ticket
    *
-   * @param ticket ticket given to the player
+   * @param ticket   ticket given to the player
    * @param playerId id assigned to the player
    */
   public Player(Ticket ticket, int playerId) {

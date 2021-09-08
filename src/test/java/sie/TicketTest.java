@@ -20,13 +20,13 @@ class TicketTest {
   private Ticket customTarget;
 
   @BeforeEach
-  public void setUp() throws Exception {
+  public void setUp() {
     minTarget = new Ticket(ROWS_MINIMUM, COLUMNS_MINIMUM, NUMBERS_PER_ROW_MINIMUM, RANGE_MINIMUM);
     defaultTarget = new Ticket(ROWS_DEFAULT, COLUMNS_DEFAULT, NUMBERS_PER_ROW_DEFAULT, RANGE_DEFAULT);
   }
 
   @AfterEach
-  public void tearDown() throws Exception {
+  void tearDown() {
     minTarget = null;
     defaultTarget = null;
     customTarget = null;
@@ -39,8 +39,9 @@ class TicketTest {
     // assert there has not been any hits on the target and no winners
     assert defaultTarget.getNumberOfHits() == hitCount;
 
-    for(int i = 1; i <= RANGE_DEFAULT; i++){
-      if(defaultTarget.selectNumber(i)) hitCount++;
+    for (int i = 1; i <= RANGE_DEFAULT; i++) {
+      if (defaultTarget.selectNumber(i))
+        hitCount++;
     }
 
     // assert the number of hits and winners were tracked properly
@@ -57,8 +58,9 @@ class TicketTest {
     // assert there has not been any hits on the target and no winners
     assert minTarget.getNumberOfHits() == hitCount;
 
-    for(int i = 1; i <= RANGE_MINIMUM; i++){
-      if(minTarget.selectNumber(i)) hitCount++;
+    for (int i = 1; i <= RANGE_MINIMUM; i++) {
+      if (minTarget.selectNumber(i))
+        hitCount++;
     }
 
     // assert the number of hits and winners were tracked properly
@@ -68,16 +70,16 @@ class TicketTest {
   }
 
   /** these tests are stubbed but could easily be implemeted
-  @Test void getNumberOfHits() {
-  }
+   @Test void getNumberOfHits() {
+   }
 
-  @Test void topLineWinner() {
-  }
+   @Test void topLineWinner() {
+   }
 
-  @Test void fullHouseWinner() {
-  }
+   @Test void fullHouseWinner() {
+   }
 
-  @Test void selectNumber() {
-  }
-  */
+   @Test void selectNumber() {
+   }
+   */
 }

@@ -28,10 +28,10 @@ public class Ticket {
   /**
    * Ticket for the game Housie
    *
-   * @param rows on the ticket
-   * @param columns on the ticket
+   * @param rows          on the ticket
+   * @param columns       on the ticket
    * @param numbersPerRow numbers per row, must be less than the column size
-   * @param range of numbers allowed on board, must be larger that columns x numbers per row
+   * @param range         of numbers allowed on board, must be larger that columns x numbers per row
    */
   public Ticket(int rows, int columns, int numbersPerRow, int range) {
     this.rows = rows;
@@ -128,7 +128,7 @@ public class Ticket {
    * Helper function to retrieve next random int in the range of 1 - number of columns
    *
    * @param randomInt randomly generated int
-   * @param columns number of columns which is top bound of the range
+   * @param columns   number of columns which is top bound of the range
    * @return index in the row for the next number to be placed
    */
   private int getIndex(int randomInt, int columns) {
