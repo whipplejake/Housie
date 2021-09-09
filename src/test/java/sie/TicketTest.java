@@ -1,10 +1,10 @@
 package sie;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
-class TicketTest {
+public class TicketTest {
 
   private static final int COLUMNS_DEFAULT = 10;
   private static final int COLUMNS_MINIMUM = 1;
@@ -19,14 +19,14 @@ class TicketTest {
   private Ticket defaultTarget;
   private Ticket customTarget;
 
-  @BeforeEach
+  @Before
   public void setUp() {
     minTarget = new Ticket(ROWS_MINIMUM, COLUMNS_MINIMUM, NUMBERS_PER_ROW_MINIMUM, RANGE_MINIMUM);
     defaultTarget = new Ticket(ROWS_DEFAULT, COLUMNS_DEFAULT, NUMBERS_PER_ROW_DEFAULT, RANGE_DEFAULT);
   }
 
-  @AfterEach
-  void tearDown() {
+  @After
+  public void tearDown() {
     minTarget = null;
     defaultTarget = null;
     customTarget = null;
@@ -70,16 +70,16 @@ class TicketTest {
   }
 
   /** these tests are stubbed but could easily be implemeted
-   @Test void getNumberOfHits() {
+   @Test public void getNumberOfHits() {
    }
 
-   @Test void topLineWinner() {
+   @Test public  topLineWinner() {
    }
 
-   @Test void fullHouseWinner() {
+   @Test public void fullHouseWinner() {
    }
 
-   @Test void selectNumber() {
+   @Test public void selectNumber() {
    }
    */
 }

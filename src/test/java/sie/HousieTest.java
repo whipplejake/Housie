@@ -1,14 +1,15 @@
 package sie;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class HousieTest {
+public class HousieTest {
 
-  @Test
-  void callNumber() {
+  // @Test
+  public void callNumber() {
+
   }
 
-  @Test
-  void printSummary() {
+  // @Test
+  public void printSummary() {
   }
 }

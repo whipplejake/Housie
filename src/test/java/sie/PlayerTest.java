@@ -1,35 +1,35 @@
 package sie;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class PlayerTest {
+public class PlayerTest {
 
   // stubs for each individual function
-  @Test
-  void isFullHouseWinner() {
+  // @Test
+  public void isFullHouseWinner() {
   }
 
-  @Test
-  void isTopLineWinner() {
+  // @Test
+  public void isTopLineWinner() {
   }
 
-  @Test
-  void totalTicketHits() {
+  // @Test
+  public void totalTicketHits() {
   }
 
-  @Test
-  void checkNumber() {
+  // @Test
+  public void checkNumber() {
   }
 
-  @Test
-  void getPlayerId() {
+  // @Test
+  public void getPlayerId() {
   }
 
-  @Test
-  void setEarlyFiveWinner() {
+  // @Test
+  public void setEarlyFiveWinner() {
   }
 
-  @Test
-  void printPlayerSummary() {
+  // @Test
+  public void printPlayerSummary() {
   }
 }
